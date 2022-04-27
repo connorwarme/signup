@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Raleway:wght@300;500;800&display=swap" rel="stylesheet"> 
     <title>Sign-Up Form</title>
 </head>
 <body>
@@ -13,56 +16,66 @@
             <div class="namebackground">
                 <div class="name">AMITY</div>
             </div>
-            <p>background image</p>
-            <p>icon/brand</p>
-            <p>MITY text with cool font and fallback</p>
         </div>
         <div class="panel">
             <div class="row1">
                 <p>introduce service/why its valuable</p>
+                <div class="headline">
+                    <h2>Let's do it!</h2>
+                </div>
             </div>
             <div class="row2">
-                <!-- <form action="/my-form-page" method="post"> -->
-                <div class="column1">
-                    <!-- <h2>Let's do it!</h2>
+                <form action="/my-form-page" method="post">
+                <div class="block">
+                    <div class="column1">
                     <label for="firstname">
-                        <span>First Name: </span>
-                        <strong><abbr title="required">*</abbr></strong>
+                        <span>First Name</span>
+                        <strong><abbr title="Required">*</abbr></strong>
                     </label>
-                    <input type="text" id="firstname" name="firstname">
+                    <br>
+                    <input type="text" id="firstname" name="firstname"n required>
                     <label for="email">
                         <span>Email</span>
-                        <strong><abbr title="required">*</abbr></strong>
+                        <strong><abbr title="Required">*</abbr></strong>
                     </label>
-                    <input type="email" id="email" name="email">
+                    <br>
+                    <input type="email" id="email" name="email" required>
                     <label for="password">
                         <span>Password</span>
                     </label>
-                    <input type="password" id="password" name="password"> -->
+                    <br>
+                    <input type="password" id="password" name="password">
                 </div>
                 <div class="column2">
-                    <!-- <label for="lastname">
-                        <span>Last Name: </span>
-                        <strong><abbr title="required">*</abbr></strong>
+                    <label for="lastname">
+                        <span>Last Name</span>
+                        <strong><abbr title="Required">*</abbr></strong>
                     </label>
-                    <input type="text" id="lastname" name="lastname">
+                    <br>
+                    <input type="text" id="lastname" name="lastname" required>
                     <label for="phonenumber">
                         <span>Phone Number</span>
                     </label>
+                    <br>
                     <input type="tel" id="phonenumber" name="phonenumber">
                     <label for="passwordconf">
                         <span>Confirm Password</span>
-                    <input type="password" id="[asswordconf" name="passwordconf"
-                    </label> -->
+                    </label>
+                    <br>
+                    <input type="password" id="passwordconf" name="passwordconf">
+                </div>
                 </div>
                 <div class="column3">
                 <!-- blank -->
                     
                 </div>
-                <!-- </form> -->
+                </form>
             </div>
             <div class="row3">
-                <p>button to create account, link to log in if you already have an acct.</p>
+                <div class="btn">
+                    <button>Create Account</button>
+                </div>
+                <div>Already have an account? <a href="" target="_blank" title="Log in page">Log in.</a></div>
             </div>
         </div>
     </div>
