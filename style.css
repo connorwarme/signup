@@ -119,13 +119,13 @@ input:focus {
 form {
     display: flex;
 }
-input[type="password"]:valid {
+/* input[type="password"]:valid {
     border: 2px solid rgb(3, 192, 44);
 }
 input[type="password"]:invalid {
     border: 2px solid red;
     box-shadow: 2px 2px 2px rgb(0 ,0, 0, 0.5);
-}
+} */
 button {
     font-weight: 500;
     font-size: 18px;
@@ -151,7 +151,19 @@ abbr {
 a {
     text-decoration: none;
 }
-a:link {
+.error {
+    background-color: red;
+    color: white;
+    font-size: 80%;
+    width: 200px;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+}
+.error.active {
+    padding: 0.3em;
+}
+/* a:link {
 
 }
 a:visited {
@@ -162,4 +174,4 @@ a:hover {
 }
 a:active {
 
-}
+} */

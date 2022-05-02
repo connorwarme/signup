@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Raleway:wght@300;500;800&display=swap" rel="stylesheet"> 
     <title>Sign-Up Form</title>
+<!-- <script rel="javascript" src="signup.js" defer></script> -->
 </head>
 <body>
     <div class="main">
@@ -49,7 +50,8 @@
                         <span>Password</span>
                     </label>
                     <br>
-                    <input type="password" id="password" name="password" required>
+                    <input novalidate type="password" id="password" name="password" required>
+                    <span class="error" aria-live="polite"></span>
                 </div>
                 <div class="column2">
                     <label for="lastname">
@@ -86,3 +88,12 @@
     </div>
 </body>
 </html>
+
+<!-- Notes:
+Need to change layout so that tabbing moves correctly thru the order (firstname, lastname, etc.)
+When error message pops up (for password), it changes layout of column above it.
+Create Account button doesn't do anything..?
+Create password strength check
+Create password conf check
+Style those ^^
+Make sure those checks only run once the user has started to input -->
