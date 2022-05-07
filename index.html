@@ -33,49 +33,63 @@
                 <div class="join"><h2>Join us!</h2></div>
                 <form action="/my-form-page" method="post">
                 <div class="block">
-                    <div class="column1">
-                    <label for="firstname">
+                    <div class="formrow1">
+                        <div class="fname">
+                        <label for="firstname">
                         <span>First Name</span>
                         <strong><abbr title="Required">*</abbr></strong>
-                    </label>
-                    <br>
-                    <input type="text" id="firstname" name="firstname"n required>
-                    <label for="email">
-                        <span>Email</span>
-                        <strong><abbr title="Required">*</abbr></strong>
-                    </label>
-                    <br>
-                    <input type="email" id="email" name="email" required>
-                    <label for="password">
-                        <span>Password</span>
-                    </label>
-                    <br>
-                    <input novalidate type="password" id="password" name="password" required>
-                    <span class="error" aria-live="polite"></span>
-                </div>
-                <div class="column2">
-                    <label for="lastname">
+                        </label>
+                        <br>
+                        <input type="text" id="firstname" name="firstname" required>
+                        </div>
+                        <div class="lname">
+                        <label for="lastname">
                         <span>Last Name</span>
                         <strong><abbr title="Required">*</abbr></strong>
-                    </label>
-                    <br>
-                    <input type="text" id="lastname" name="lastname" required>
-                    <label for="phonenumber">
+                        </label>
+                        <br>
+                        <input type="text" id="lastname" name="lastname" required>
+                        </div>
+                    </div>
+                    <div class="formrow2">
+                        <div class="email">
+                        <label for="email">
+                        <span>Email</span>
+                        <strong><abbr title="Required">*</abbr></strong>
+                        </label>
+                        <br>
+                        <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="phone">
+                        <label for="phonenumber">
                         <span>Phone Number</span>
-                    </label>
-                    <br>
-                    <input type="tel" id="phonenumber" name="phonenumber">
-                    <label for="passwordconf">
+                        </label>
+                        <br>
+                        <input type="tel" id="phonenumber" name="phonenumber">
+                        </div>
+                    </div>
+                    <div class="formrow3">
+                        <div class="pw">
+                        <label for="password">
+                        <span>Password</span>
+                        </label>
+                        <br>
+                        <input novalidate type="password" id="password" name="password" required>
+                    <!-- <span class="error" aria-live="polite"></span> -->
+                        </div>
+                        <div class="pwconf">
+                        <label for="passwordconf">
                         <span>Confirm Password</span>
-                    </label>
-                    <br>
-                    <input type="password" id="passwordconf" name="passwordconf" required>
+                        </label>
+                        <br>
+                        <input type="password" id="passwordconf" name="passwordconf" required>
+                        </div>
+                    </div>
                 </div>
-                </div>
-                <div class="column3">
+                <!-- <div class="column3"> -->
                 <!-- blank -->
                     
-                </div>
+                <!-- </div> -->
                 </form>
             </div>
             <div class="row3">

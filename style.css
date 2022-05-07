@@ -2,7 +2,8 @@
     display: flex;
 }
 .sidepanel {
-    width: 42%;
+    min-width: 400px;
+    width: 40vw;
     background-image: url(images/Asillyrabbit.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,13 +27,15 @@
 }
 .panel {
     font-family: "Raleway", Georgia, 'Times New Roman', Times, serif;
-    width: 58vw;
+    min-width: 600px;
+    width: 55vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 .row1, .row2, .row3 {
-    width: 100%;
+    min-width: 600px;
+    width: 55vw;
     height: calc(95vh / 3);
     padding-left: 3vw;
 }
@@ -78,21 +81,37 @@ ul, li {
 }
 h2 {
     margin: 0;
-    padding: 0;
-    padding-top: 12px;
+    padding: 12px 0 12px 0;
 }
-.block {
+/* .block {
     display: flex;
     justify-content: space-between;
     align-items: center;
+} */
+.block {
+    display: flex;
+    flex-direction: column;
 }
-.column1, .column2 {
-    width: calc(58vw / 3);
+.formrow1, .formrow2, .formrow3 {
+    width: 55vw;
+    display: flex;
+}
+.fname, .email, .pw {
+    padding-left: 3vw;
+}
+.lname, .phone, .pwconf {
+    padding-left: 7vw;
+}
+#firstname, #lastname, #email, #phonenumber, #password, #passwordconf {
+    margin-top: 6px;
+}
+/* .column1, .column2 {
+    width: calc(55vw / 3);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 8px;
-}
+} */
 input, label, select, button {
     font-family: inherit;
     font-size: 100%;
@@ -109,6 +128,9 @@ input {
     margin-bottom: 14px;
     border: 2px solid rgb(204, 204, 206);
     border-radius: 10px;
+}
+input:hover {
+    transform: scale(1.05);
 }
 input:focus {
     border: 1.5px solid #0891d0;
@@ -134,7 +156,7 @@ button {
     border-radius: 10px;
     height: 44px;
     width: 160px;
-    margin: 20px 20px 14px 20px;
+    margin: 20px 20px 14px 4.5vw;
     box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.3);
 }
 button:hover {
@@ -143,7 +165,7 @@ button:hover {
     
 }
 .account {
-    margin-left: 10px;
+    margin-left: 4.5vw;
  }
 abbr {
     text-decoration: none;
