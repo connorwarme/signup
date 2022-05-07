@@ -83,11 +83,6 @@ h2 {
     margin: 0;
     padding: 12px 0 12px 0;
 }
-/* .block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
 .block {
     display: flex;
     flex-direction: column;
@@ -105,13 +100,6 @@ h2 {
 #firstname, #lastname, #email, #phonenumber, #password, #passwordconf {
     margin-top: 6px;
 }
-/* .column1, .column2 {
-    width: calc(55vw / 3);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 8px;
-} */
 input, label, select, button {
     font-family: inherit;
     font-size: 100%;
@@ -174,16 +162,23 @@ a {
     text-decoration: none;
 }
 .error {
-    background-color: red;
-    color: white;
+    background-color: white;
+    color: black;
     font-size: 80%;
-    width: 200px;
+    width: 190px;
     padding: 0;
     margin: 0;
+    border: 1px solid rgb(255, 0, 0);
     border-radius: 5px;
+    display: none;
 }
 .error.active {
+    margin-top: 12px;
     padding: 0.3em;
+    position: relative;
+    bottom: 24px;
+    display: block;
+    /* z-index: 2; */
 }
 /* a:link {
 

@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Raleway:wght@300;500;800&display=swap" rel="stylesheet"> 
     <title>Sign-Up Form</title>
-<script rel="javascript" src="signup.js" defer></script>
+<!-- <script rel="javascript" src="signup.js" defer></script> -->
 </head>
 <body>
     <div class="main">
@@ -33,59 +33,48 @@
                 <div class="join"><h2>Join us!</h2></div>
                 <form action="/my-form-page" method="post">
                 <div class="block">
-                    <div class="formrow1">
-                        <div class="fname">
-                        <label for="firstname">
+                    <div class="column1">
+                    <label for="firstname">
                         <span>First Name</span>
                         <strong><abbr title="Required">*</abbr></strong>
-                        </label>
-                        <br>
-                        <input type="text" id="firstname" name="firstname" required>
-                        </div>
-                        <div class="lname">
-                        <label for="lastname">
-                        <span>Last Name</span>
-                        <strong><abbr title="Required">*</abbr></strong>
-                        </label>
-                        <br>
-                        <input type="text" id="lastname" name="lastname" required>
-                        </div>
-                    </div>
-                    <div class="formrow2">
-                        <div class="email">
-                        <label for="email">
+                    </label>
+                    <br>
+                    <input type="text" id="firstname" name="firstname"n required>
+                    <label for="email">
                         <span>Email</span>
                         <strong><abbr title="Required">*</abbr></strong>
-                        </label>
-                        <br>
-                        <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="phone">
-                        <label for="phonenumber">
-                        <span>Phone Number</span>
-                        </label>
-                        <br>
-                        <input type="tel" id="phonenumber" name="phonenumber">
-                        </div>
-                    </div>
-                    <div class="formrow3">
-                        <div class="pw">
-                        <label for="password">
+                    </label>
+                    <br>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">
                         <span>Password</span>
-                        </label>
-                        <br>
-                        <input novalidate type="password" id="password" name="password" required>
-                        <!-- <br> -->
-                        <span class="error" aria-live="polite"></span>
-                        </div>
-                        <div class="pwconf">
-                        <label for="passwordconf">
+                    </label>
+                    <br>
+                    <input novalidate type="password" id="password" name="password" required>
+                    <span class="error" aria-live="polite"></span>
+                </div>
+                <div class="column2">
+                    <label for="lastname">
+                        <span>Last Name</span>
+                        <strong><abbr title="Required">*</abbr></strong>
+                    </label>
+                    <br>
+                    <input type="text" id="lastname" name="lastname" required>
+                    <label for="phonenumber">
+                        <span>Phone Number</span>
+                    </label>
+                    <br>
+                    <input type="tel" id="phonenumber" name="phonenumber">
+                    <label for="passwordconf">
                         <span>Confirm Password</span>
-                        </label>
-                        <br>
-                        <input type="password" id="passwordconf" name="passwordconf" required>
-                        </div>
-                    </div>
+                    </label>
+                    <br>
+                    <input type="password" id="passwordconf" name="passwordconf" required>
+                </div>
+                </div>
+                <div class="column3">
+                <!-- blank -->
+                    
                 </div>
                 </form>
             </div>
@@ -100,8 +89,21 @@
 </body>
 </html>
 
+<!-- /* .block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+/* .column1, .column2 {
+    width: calc(55vw / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 8px;
+} */ -->
 <!-- Notes:
-When error message pops up (for password), it changes layout of row (look into z-index, maybe have error as a modal?)
+Need to change layout so that tabbing moves correctly thru the order (firstname, lastname, etc.)
+When error message pops up (for password), it changes layout of column above it.
 Create Account button doesn't do anything..?
 Create password strength check
 Create password conf check
